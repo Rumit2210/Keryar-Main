@@ -1,0 +1,50 @@
+/*@media (max-width: 767px) {
+    .navbar-nav .social {
+        display: none !important;
+    }
+    .navbar-nav nav.social {
+        display: none !important;
+    }
+}*/
+@media (min-width: 768px) {
+    .offcanvas-footer .social {
+        display: none !important;
+    }
+}
+
+/* User icon in navbar: desktop/tablet - in social nav; mobile - next to hamburger */
+
+/* Default: show in social nav */
+.user-navbar-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Mobile: move user icon next to hamburger, hide in social nav */
+@media (max-width: 991.98px) {
+  .navbar-other .user-navbar-icon {
+    position: absolute;
+    right: 60px; /* adjust as needed to be left of hamburger */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 0;
+    z-index: 1051;
+    display: block;
+  }
+  .navbar-other {
+    position: relative;
+  }
+  .navbar-other .social a {
+    display: none !important;
+  }
+  .navbar-other .user-navbar-icon {
+    display: block !important;
+  }
+}
+
+/* Ensure hamburger is positioned relative for absolute icon */
+@media (max-width: 991.98px) {
+  .navbar-other {
+    position: relative;
+  }
+}
