@@ -1,50 +1,502 @@
-/*@media (max-width: 767px) {
-    .navbar-nav .social {
-        display: none !important;
-    }
-    .navbar-nav nav.social {
-        display: none !important;
-    }
-}*/
-@media (min-width: 768px) {
-    .offcanvas-footer .social {
-        display: none !important;
-    }
-}
-
-/* User icon in navbar: desktop/tablet - in social nav; mobile - next to hamburger */
-
-/* Default: show in social nav */
-.user-navbar-icon {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* Mobile: move user icon next to hamburger, hide in social nav */
-@media (max-width: 991.98px) {
-  .navbar-other .user-navbar-icon {
-    position: absolute;
-    right: 60px; /* adjust as needed to be left of hamburger */
-    top: 50%;
-    transform: translateY(-50%);
-    margin-right: 0;
-    z-index: 1051;
-    display: block;
-  }
-  .navbar-other {
-    position: relative;
-  }
-  .navbar-other .social a {
-    display: none !important;
-  }
-  .navbar-other .user-navbar-icon {
-    display: block !important;
-  }
-}
-
 /* Ensure hamburger is positioned relative for absolute icon */
 @media (max-width: 991.98px) {
   .navbar-other {
     position: relative;
   }
+  .navbar-brand,
+  .navbar-brand.ps-3 {
+    display: block !important;
+    visibility: visible !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+  }
+  .navbar-brand img {
+    display: block !important;
+    visibility: visible !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+  .user-icon-mobile .user-navbar-icon {
+    font-size: 1.2rem !important;
+    height: 20px !important;
+    width: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .navbar-brand .user-navbar-icon {
+    display: none !important;
+  }
+  .navbar-collapse-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  .navbar-brand {
+    flex: 0 0 auto !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    width: auto !important;
+  }
+  .navbar-brand img {
+    display: block !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+  .d-flex.align-items-center.d-lg-none {
+    margin-left: auto !important;
+  }
+}
+
+/* Styles for Web Application & Mobile Application Pages */
+.web-application-page .bg-gradient-primary,
+.mobile-application-page .bg-gradient-primary {
+    background: linear-gradient(10deg, blue 0%, cyan 100%);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 767.98px) {
+    .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+        font-size: 2rem !important;
+    }
+
+    .lead {
+        font-size: 1.1rem !important;
+    }
+
+    .py-12 {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+
+    .py-16 {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+    .mb-6 {
+        margin-bottom: 2rem !important;
+    }
+
+    .px-lg-5, .px-xxl-8 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .btn-lg {
+        padding: 0.8rem 1.6rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    .navbar-other .social {
+        display: none !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+  .web-application-page .display-1 {
+    margin-top: 2.5rem !important;
+  }
+  /* Prevent horizontal scroll */
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden !important;
+  }
+  main, section, .container, .container-fluid {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    width: 100vw !important;
+    box-sizing: border-box;
+  }
+  .row, .g-4, .g-5, .g-3, .g-2, .g-1 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    --bs-gutter-x: 0.5rem !important;
+  }
+  .col, .col-12, .col-md-6, .col-md-4, .col-md-3, .col-md-2, .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-3 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+  /* Hero section image and text */
+  .hero-section img, section img, .img-fluid, .rounded, .shadow {
+    max-width: 90vw !important;
+    height: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .hero-section h1, .display-2, .display-4 {
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+  .hero-section .lead, .lead, .fs-3, .fs-4, .fs-5 {
+    font-size: 1rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+  .btn, .btn-lg {
+    font-size: 1rem !important;
+    padding: 0.7rem 1.2rem !important;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  /* Features zig-zag: stack images above text */
+  .row.align-items-center.flex-md-row, .row.align-items-center.flex-md-row-reverse, .row.align-items-center.flex-md-row.flex-column, .row.align-items-center.flex-md-row.flex-column-reverse {
+    flex-direction: column !important;
+  }
+  .glass-card {
+    margin: 0 !important;
+    padding: 1rem !important;
+  }
+  /* Process stepper: stack steps vertically */
+  .wavy-process {
+    flex-direction: column !important;
+    gap: 1.2rem !important;
+  }
+  .wavy-process svg {
+    display: none !important;
+  }
+  .step {
+    margin-bottom: 0.5rem !important;
+  }
+  /* Tech stack: 2 columns on mobile */
+  .tech-masonry .col-6, .tech-masonry .col-md-2 {
+    width: 48% !important;
+    margin-bottom: 1rem !important;
+  }
+  .tech-masonry img {
+    max-width: 80px !important;
+    height: auto !important;
+  }
+  /* Portfolio: stack cards vertically */
+  .portfolio-overlap .col-12, .portfolio-overlap .col-md-4 {
+    width: 100% !important;
+    margin-top: 1.2rem !important;
+    margin-bottom: 0 !important;
+    transform: none !important;
+  }
+  .portfolio-overlap .card {
+    margin-top: 0 !important;
+    margin-bottom: 1.2rem !important;
+    border-radius: 1.2rem !important;
+  }
+  /* Testimonials: stack and center */
+  .testimonials-arc {
+    flex-direction: column !important;
+    gap: 1.2rem !important;
+    align-items: center !important;
+  }
+  .testimonial-card {
+    max-width: 95vw !important;
+    margin: 0 auto 1.2rem auto !important;
+    border-radius: 1.2rem !important;
+  }
+  /* CTA section: reduce padding, font size */
+  .py-10, .py-md-14 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  .cta-section h2, .cta-section .display-4 {
+    font-size: 1.3rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .cta-section .lead {
+    font-size: 1rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+  /* Footer: stack columns */
+  footer .row {
+    flex-direction: column !important;
+  }
+  footer .row > div {
+    width: 100% !important;
+    margin-bottom: 1.5rem !important;
+  }
+  /* Remove extra border radius on sections */
+  section {
+    border-radius: 0.5rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+  /* Hide SVG blobs if they overflow */
+  section svg.position-absolute {
+    max-width: 100vw !important;
+    height: auto !important;
+  }
+}
+
+/* Make .btn-view-work visually distinct and accessible */
+.btn-view-work {
+  background-color: #764ba2 !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 2px 12px rgba(118, 75, 162, 0.08);
+  opacity: 1 !important;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-view-work:hover, .btn-view-work:focus {
+  background-color: #667eea !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+body {
+  font-size: 1.1rem !important;
+}
+
+h1, .h1 { font-size: 2.5rem !important; }
+h2, .h2 { font-size: 2rem !important; }
+h3, .h3 { font-size: 1.6rem !important; }
+h4, .h4 { font-size: 1.3rem !important; }
+h5, .h5 { font-size: 1.1rem !important; }
+h6, .h6 { font-size: 1rem !important; }
+
+.lead { font-size: 1.25rem !important; }
+
+.btn, .btn-lg, .btn-view-work {
+  font-size: 1.15rem !important;
+}
+
+.fs-4, .fs-5, .fs-6, .text-muted, .subtitle, .section-subtitle, .subdata, .desc, .description {
+  font-size: 1.15rem !important;
+  line-height: 1.7 !important;
+}
+
+header.header-hidden {
+  transform: translateY(-100%) !important;
+  transition: transform 0.3s ease !important;
+  z-index: 1050 !important;
+  will-change: transform;
+}
+
+/* Make tech badges more visible with cyan background */
+.tech-stack-badge {
+  background-color: #06b6d4 !important; /* cyan-400 */
+  color: #fff !important;
+  border: 1px solid #0891b2 !important; /* cyan-600 */
+}
+
+/* Themed backgrounds for technology stack cards */
+.mobile-application-page .tech-bg {
+  background: #f5eafe; /* soft purple */
+}
+.web-application-page .tech-bg {
+  background: #eaf0fe; /* soft blue/grape */
+}
+body:not(.mobile-application-page):not(.web-application-page) .tech-bg {
+  background: #f0f4ff; /* soft blue for website.html */
+}
+.tech-bg {
+  border-radius: 1rem;
+}
+
+.btn-light {
+  color: #343f52 !important;
+  background: #fff !important;
+  border: 2px solid #fff !important;
+  box-shadow: 0 2px 12px rgba(52, 63, 82, 0.08);
+  font-weight: bold;
+}
+.btn-light:hover, .btn-light:focus {
+  background: #f5f5f5 !important;
+  color: #222 !important;
+  border-color: #eee !important;
+}
+
+/* --- KERYAR Website Main Content Visual Enhancements --- */
+
+/* Card hover effect */
+.card, .feature-card, .testimonial-card {
+  transition: box-shadow 0.3s cubic-bezier(.4,1,.8,1), transform 0.3s cubic-bezier(.4,1,.8,1), border-color 0.3s;
+}
+.card:hover, .feature-card:hover, .testimonial-card:hover {
+  box-shadow: 0 8px 32px rgba(63,120,224,0.12), 0 1.5px 6px rgba(96,93,186,0.08);
+  transform: translateY(-6px) scale(1.025);
+  border-color: #6a11cb;
+  z-index: 2;
+}
+
+/* Portfolio image zoom */
+.portfolio-grid .card-img-top {
+  transition: transform 0.4s cubic-bezier(.4,1,.8,1);
+}
+.portfolio-grid .card:hover .card-img-top {
+  transform: scale(1.06);
+}
+
+/* Testimonial card highlight */
+.testimonial-card:hover {
+  border-color: #2575fc;
+  background: linear-gradient(90deg, #f8f9fa 60%, #eaf0fb 100%);
+}
+
+/* Section gradients for hero and CTA */
+.hero-section, .bg-gradient-primary {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%) !important;
+}
+.bg-gradient-primary {
+  color: #fff;
+}
+
+/* Button enhancements */
+.btn, .btn-lg {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.btn-primary:hover, .btn-lg.btn-primary:hover {
+  background: #2575fc;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(63,120,224,0.18);
+}
+.btn-light:hover, .btn-lg.btn-light:hover {
+  background: #fff;
+  color: #2575fc;
+  border: 1.5px solid #2575fc;
+  box-shadow: 0 4px 16px rgba(63,120,224,0.10);
+}
+
+/* Headings */
+.display-2, .display-4, .display-5, h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #22223b;
+}
+.display-2, .display-4 {
+  font-size: 2.7rem;
+}
+.display-5 {
+  font-size: 2.1rem;
+}
+
+/* Section spacing refinement */
+section {
+  border-radius: 0 !important;
+  margin-top: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Subtle fade-in animation for cards */
+.card, .feature-card, .testimonial-card {
+  opacity: 0;
+  animation: fadeInCard 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+@keyframes fadeInCard {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Responsive tweaks for business look */
+@media (max-width: 575.98px) {
+  .display-2, .display-4 { font-size: 2rem !important; }
+  .display-5 { font-size: 1.3rem !important; }
+  section { border-radius: 0.7rem; }
+}
+
+/* Professional color palette */
+.bg-light, .bg-white { background: white !important; }
+.bg-gray { background: #f3f4f8 !important; }
+
+/* Timeline step highlight on hover */
+.timeline-step {
+  transition: box-shadow 0.3s, background 0.3s;
+}
+.timeline-step:hover {
+  box-shadow: 0 4px 16px rgba(63,120,224,0.10);
+  background: #f3f4f8;
+}
+
+/* Tech stack icon hover */
+.tech-bg img {
+  transition: transform 0.3s;
+}
+.tech-bg:hover img {
+  transform: scale(1.15) rotate(-6deg);
+}
+
+@media (max-width: 575.98px) {
+  .container, .container-fluid, section, main {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .col-12, .col-md-8, .col-lg-8, .col-lg-6, .col-md-6, .col-lg-4, .col-md-4, .col-lg-3, .col-md-3 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .display-1, .display-2, .display-3, .display-4 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+  .lead, .fs-3, .fs-4, .fs-5 {
+    font-size: 1.1rem !important;
+  }
+  .card-body, .card {
+    padding: 1rem !important;
+  }
+  img, .img-fluid, .rounded, .shadow {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .d-flex.gap-3, .d-flex.gap-2 {
+    gap: 0.5rem !important;
+  }
+  .accordion-body {
+    font-size: 1rem !important;
+  }
+  .btn, .btn-lg {
+    font-size: 1rem !important;
+    padding: 0.7rem 1.2rem !important;
+  }
+  .rounded-circle {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 1.2rem !important;
+  }
+  .navbar-other .nav.social {
+    display: none !important;
+  }
+  .navbar-brand img {
+    max-width: 120px !important;
+    height: auto !important;
+  }
+  .navbar-collapse-wrapper {
+    border-radius: 0 !important;
+    padding: 0.5rem 0 !important;
+  }
+  footer .row > div {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Force remove any line, shadow, or background above the navbar */
+header.position-absolute.w-100,
+header.position-absolute.w-100 > .navbar,
+.navbar.navbar-bg-light,
+header.position-absolute.w-100 > nav,
+header.position-absolute.w-100 > .navbar > .container,
+header.position-absolute.w-100 > nav > .container,
+.navbar-collapse-wrapper {
+  border-top: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Remove any margin or padding above the header/navbar */
+body, .content-wrapper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
