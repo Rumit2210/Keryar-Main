@@ -293,7 +293,7 @@ header.header-hidden {
   background: #eaf0fe; /* soft blue/grape */
 }
 body:not(.mobile-application-page):not(.web-application-page) .tech-bg {
-  background: #f0f4ff; /* soft blue for website.html */
+  background: #f0f4ff; /* soft blue for website-development.html */
 }
 .tech-bg {
   border-radius: 1rem;

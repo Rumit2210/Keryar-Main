@@ -65,18 +65,7 @@
         <link rel="stylesheet" href="./assets/css/colors/grape.css" />
         <!-- <link rel="stylesheet" href="./assets/css/custom.css" /> -->
         <link rel="preload" href="./assets/css/fonts/space.css" as="style" onload="this.rel='stylesheet'" />
-        <style>
-          @media (max-width: 767px) {
-              .navbar-nav .social {
-                  display: none !important;
-              }
-          }
-          @media (min-width: 768px) {
-              .offcanvas-footer .social {
-                  display: none !important;
-              }
-          }
-      </style>
+        
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-184745082-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -133,7 +122,6 @@
                                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Development</a>
                                             <div class="dropdown-menu dropdown-lg">
                                                 <div class="dropdown-lg-content">
-                                                    
                                                     <div>
                                                         <ul class="list-unstyled">
                                                             <li class="nav-item"><a class="dropdown-item" href="website-development.html">Website Development</a></li>
@@ -150,13 +138,13 @@
                                             </div>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Marketing</a>
+                                            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Marketing</a>
                                             <div class="dropdown-menu dropdown-lg">
                                                 <div class="dropdown-lg-content">
                                                     
                                                     <div>
                                                         <ul class="list-unstyled">
-                                                            <li class="nav-item"><a class="dropdown-item" href="social-media-marketing.html">Social Media Marketing</a></li>
+                                                            <li class="nav-item"><a class="dropdown-item active" href="social-media-marketing.html">Social Media Marketing</a></li>
                                                             <li class="nav-item"><a class="dropdown-item" href="seo.html">SEO</a></li>
                                                             <li class="nav-item"><a class="dropdown-item" href="lead-generation.html">Lead Generation</a></li>
                                                             <li class="nav-item"><a class="dropdown-item" href="email-marketing.html">Email Marketing</a></li>
@@ -171,7 +159,7 @@
                                             </div>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle active" href="" data-bs-toggle="dropdown">Workfolio</a>
+                                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Workfolio</a>
                                             <div class="dropdown-menu dropdown-lg">
                                                 <div class="dropdown-lg-content">
                                                     
@@ -180,7 +168,7 @@
                                                             <li class="nav-item"><a class="dropdown-item" href="case-study.html">Case study</a></li>
                                                             <li class="nav-item"><a class="dropdown-item" href="client.html">Clients</a></li>
                                                             <li class="nav-item"><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
-                                                            <li class="nav-item"><a class="dropdown-item active" href="portfolio.html">Portfolio</a></li>
+                                                            <li class="nav-item"><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
                                                             <li class="nav-item"><a class="dropdown-item" href="faq.html">FAQ's</a></li>
                                                         </ul>
                                                     </div>
@@ -258,15 +246,27 @@
                     <!-- /.container -->
                 </nav>
                 <!-- /.navbar -->
-               <!-- /.container -->
+                
             </header>
             <!-- /header -->
-            <section class="wrapper bg-light">
-                <div class="container pt-20 pt-md-20">
-                  <div class="row">
-                    <div class="col-lg-10 col-xxl-8">
-                      <h1 class="display-1 mb-0">Check out some of our awesome projects with creative ideas.</h1>
-                        <p class="lead fs-lg pe-lg-15 pe-xxl-12">Check out some of our awesome projects with creative ideas and great design.</p>
+            <section class="wrapper overflow-hidden">
+                <div class="container pt-19 pt-md-21 pb-12 text-center position-relative">
+                  <!-- <div class="position-absolute" style="top: -15%; left: 50%; transform: translateX(-50%);" data-cue="fadeIn"><img src="./assets/img/photos/blurry.png" alt=""></div> -->
+                  <div class="row position-relative">
+                    <div class="col-lg-8 col-xxl-7 mx-auto position-relative">
+                      <div class="position-absolute shape grape w-5 d-none d-lg-block" style="top: -5%; left: -15%;" data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/pie.svg" class="svg-inject icon-svg w-100 h-100" alt="" /></div>
+                      <div class="position-absolute shape violet w-10 d-none d-lg-block" style="bottom: 30%; left: -20%;" data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/scribble.svg" class="svg-inject icon-svg w-100 h-100" alt="" /></div>
+                      <div class="position-absolute shape fuchsia w-6 d-none d-lg-block" style="top: 0%; right: -25%; transform: rotate(70deg);" data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/tri.svg" class="svg-inject icon-svg w-100 h-100" alt="" /></div>
+                      <div class="position-absolute shape yellow w-6 d-none d-lg-block" style="bottom: 25%; right: -17%;" data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/circle.svg" class="svg-inject icon-svg w-100 h-100" alt="" /></div>
+                      <div data-cues="slideInDown" data-group="page-title">
+                        <h1 class="display-1 fs-64 mb-5 mx-md-10 mx-lg-0">We are a World Social agency specializing on <br /><span class="rotator-fade text-primary">Instagram, Facebook, LinkedIn, Youtube, TwitterX, Snap Chat, Pinterest</span></h1>
+                        <p class="lead fs-24 mb-8">We are an award winning digital web agency that strongly believes in the power of creative ideas.</p>
+                      </div>
+                      <div class="d-flex justify-content-center" data-cues="slideInDown" data-delay="600">
+                        <span><a class="btn btn-lg btn-primary rounded-xl mx-1">See Projects</a></span>
+                        <span><a class="btn btn-lg btn-fuchsia rounded-xl mx-1">Contact Us</a></span>
+                      </div>
+                      <!-- /div -->
                     </div>
                     <!-- /column -->
                   </div>
@@ -276,134 +276,267 @@
               </section>
               <!-- /section -->
               <section class="wrapper bg-light">
-                <div class="container py-14 py-md-5">
-                  <div class="grid grid-view projects-masonry">
-                    <div class="isotope-filter filter mb-10">
-                      <ul>
-                        <li><a class="filter-item active" data-filter="*">All</a></li>
-                        <li><a class="filter-item" data-filter=".concept">Concept</a></li>
-                        <li><a class="filter-item" data-filter=".product">Product</a></li>
-                        <li><a class="filter-item" data-filter=".workshop">Workshop</a></li>
-                        <li><a class="filter-item" data-filter=".still-life">Still Life</a></li>
-                      </ul>
+                <div class="container py-0 py-md-16">
+                  <div class="row align-items-center gy-8">
+                    <div class="col-lg-7 text-center text-lg-start">
+                      <h2 class="fs-16 text-uppercase text-muted mb-3">Save Time and Money</h2>
+                      <h3 class="display-3 mb-0 pe-xl-10 pe-xxl-15">Save your time and money by choosing our <span class="underline-3 style-2 yellow">professional</span> team.</h3>
                     </div>
-                    <div class="row gx-md-8 gy-10 gy-md-13 isotope">
-                      <div class="project item col-md-6 col-xl-4 product">
-                        <figure class="lift rounded mb-6"><a href="./single-project.html"> <img src="./assets/img/photos/cs16.jpg" alt="" /></a></figure>
-                        <div class="project-details d-flex justify-content-center flex-column">
-                          <div class="post-header">
-                            <div class="post-category text-line mb-2 text-purple">Cosmetic</div>
-                            <h2 class="post-title h3">Cras Fermentum Sem</h2>
-                          </div>
-                          <!-- /.post-header -->
+                    <!-- /column -->
+                    <div class="col-lg-5">
+                      <div class="row gy-6 text-center">
+                        <div class="col-md-6">
+                          <div class="progressbar semi-circle fuchsia" data-value="100"></div>
+                          <h4 class="mb-0">Customer Satisfaction</h4>
                         </div>
-                        <!-- /.project-details -->
-                      </div>
-                      <!-- /.project -->
-                      <div class="project item col-md-6 col-xl-4 workshop">
-                        <figure class="lift rounded mb-6"><a href="./single-project2.html"> <img src="./assets/img/photos/cs17.jpg" alt="" /></a></figure>
-                        <div class="project-details d-flex justify-content-center flex-column">
-                          <div class="post-header">
-                            <div class="post-category text-line mb-2 text-leaf">Coffee</div>
-                            <h2 class="post-title h3">Mollis Ipsum Mattis</h2>
-                          </div>
-                          <!-- /.post-header -->
+                        <!-- /column -->
+                        <div class="col-md-6">
+                          <div class="progressbar semi-circle orange" data-value="99"></div>
+                          <h4 class="mb-0">Increased Revenue</h4>
                         </div>
-                        <!-- /.project-details -->
+                        <!-- /column -->
                       </div>
-                      <!-- /.project -->
-                      <div class="project item col-md-6 col-xl-4 still-life">
-                        <figure class="lift rounded mb-6"><a href="./single-project3.html"> <img src="./assets/img/photos/cs18.jpg" alt="" /></a></figure>
-                        <div class="project-details d-flex justify-content-center flex-column">
-                          <div class="post-header">
-                            <div class="post-category text-line mb-2 text-violet">Still Life</div>
-                            <h2 class="post-title h3">Ipsum Ultricies Cursus</h2>
-                          </div>
-                          <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                      </div>
-                      <!-- /.project -->
-                      <div class="project item col-md-6 col-xl-4 product">
-                        <figure class="lift rounded mb-6"><a href="./single-project2.html"> <img src="./assets/img/photos/cs20.jpg" alt="" /></a></figure>
-                        <div class="project-details d-flex justify-content-center flex-column">
-                          <div class="post-header">
-                            <div class="post-category text-line mb-2 text-orange">Product</div>
-                            <h2 class="post-title h3">Inceptos Euismod Egestas</h2>
-                          </div>
-                          <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                      </div>
-                      <!-- /.project -->
-                      <div class="project item col-md-6 col-xl-4 product">
-                        <figure class="lift rounded mb-6"><a href="./single-project.html"> <img src="./assets/img/photos/cs19.jpg" alt="" /></a></figure>
-                        <div class="project-details d-flex justify-content-center flex-column">
-                          <div class="post-header">
-                            <div class="post-category text-line mb-2 text-yellow">Product</div>
-                            <h2 class="post-title h3">Sollicitudin Ornare Porta</h2>
-                          </div>
-                          <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                      </div>
-                      <!-- /.project -->
-                      <div class="project item col-md-6 col-xl-4 workshop">
-                        <figure class="lift rounded mb-6"><a href="./single-project3.html"> <img src="./assets/img/photos/cs21.jpg" alt="" /></a></figure>
-                        <div class="project-details d-flex justify-content-center flex-column">
-                          <div class="post-header">
-                            <div class="post-category text-line mb-2 text-green">Workshop</div>
-                            <h2 class="post-title h3">Ipsum Mollis Vulputate</h2>
-                          </div>
-                          <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                      </div>
-                      <!-- /.project -->
-                      <div class="project item col-md-6 col-xl-4 concept">
-                        <figure class="lift rounded mb-6"><a href="./single-project2.html"> <img src="./assets/img/photos/cs22.jpg" alt="" /></a></figure>
-                        <div class="project-details d-flex justify-content-center flex-column">
-                          <div class="post-header">
-                            <div class="post-category text-line mb-2 text-red">Concept</div>
-                            <h2 class="post-title h3">Porta Ornare Cras</h2>
-                          </div>
-                          <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                      </div>
-                      <!-- /.project -->
-                      <div class="project item col-md-6 col-xl-4 concept still-life">
-                        <figure class="lift rounded mb-6"><a href="./single-project.html"> <img src="./assets/img/photos/cs23.jpg" alt="" /></a></figure>
-                        <div class="project-details d-flex justify-content-center flex-column">
-                          <div class="post-header">
-                            <div class="post-category text-line mb-2 text-aqua">Concept</div>
-                            <h2 class="post-title h3">Vulputate Sollicitudin</h2>
-                          </div>
-                          <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                      </div>
-                      <!-- /.project -->
-                      <div class="project item col-md-6 col-xl-4 product">
-                        <figure class="lift rounded mb-6"><a href="./single-project3.html"> <img src="./assets/img/photos/cs24.jpg" alt="" /></a></figure>
-                        <div class="project-details d-flex justify-content-center flex-column">
-                          <div class="post-header">
-                            <div class="post-category text-line mb-2 text-purple">Product</div>
-                            <h2 class="post-title h3">Magna Tristique Inceptos</h2>
-                          </div>
-                          <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                      </div>
-                      <!-- /.project -->
+                      <!-- /.row -->
                     </div>
-                    <!-- /.row -->
+                    <!-- /column -->
                   </div>
-                  <!-- /.grid -->
+                  <!-- /.row -->
                 </div>
                 <!-- /.container -->
               </section>
               <!-- /section -->
+
+              <section class="wrapper bg-light">
+                <div class="container pt-0 pt-lg-11 pb-10 pb-lg-6">
+                  <div class="row gx-lg-8 gx-xl-10 align-items-center">
+                    <div class="col-lg-6">
+                      <figure><img src="./assets/img/photos/device.png" srcset="./assets/img/photos/device@2x.png 2x" alt="" /></figure>
+                    </div>
+                    <!-- /column -->
+                    <div class="col-lg-6">
+                      <h2 class="fs-15 text-uppercase text-muted mb-3">How It Works</h2>
+                      <h3 class="display-4 mb-5">Download the app, create your profile and voilà, you're all set!</h3>
+                      <p class="mb-8">Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo.</p>
+                      <div class="row gy-6 gx-xxl-8 process-wrapper">
+                        <div class="col-md-4"> <img src="./assets/img/icons/lineal/cloud-computing.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-3" alt="" />
+                          <h4 class="mb-1">1. Download</h4>
+                          <p class="mb-0">Nulla vitae elit libero elit non porta eget.</p>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-4"> <img src="./assets/img/icons/lineal/smartphone-2.svg" class="svg-inject icon-svg icon-svg-sm text-red mb-3" alt="" />
+                          <h4 class="mb-1">2. Set Profile</h4>
+                          <p class="mb-0">Nulla vitae elit libero elit non porta eget.</p>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-4"> <img src="./assets/img/icons/lineal/rocket.svg" class="svg-inject icon-svg icon-svg-sm text-aqua mb-3" alt="" />
+                          <h4 class="mb-1">3. Start</h4>
+                          <p class="mb-0">Nulla vitae elit libero elit non porta eget.</p>
+                        </div>
+                        <!--/column -->
+                      </div>
+                      <!--/.row -->
+                    </div>
+                    <!-- /column -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.container -->
+              </section>
+              <!-- /section -->
+
+              <section class="wrapper bg-light">
+                <div class="container py-0 py-md-10">
+                  <h2 class="display-4 mb-3">How We Do It?</h2>
+                  <p class="lead fs-lg mb-8">We make your spending <span class="underline">stress-free</span> for you to have the perfect control.</p>
+                  <div class="row gx-lg-8 gx-xl-12 gy-6 process-wrapper line">
+                    <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none mb-4"><span class="number">01</span></span>
+                      <h4 class="mb-1">Concept</h4>
+                      <p class="mb-0">Nulla vitae elit libero elit non porta gravida eget metus cras. Aenean eu leo quam. Pellentesque ornare.</p>
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-primary pe-none mb-4"><span class="number">02</span></span>
+                      <h4 class="mb-1">Prepare</h4>
+                      <p class="mb-0">Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.</p>
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none mb-4"><span class="number">03</span></span>
+                      <h4 class="mb-1">Retouch</h4>
+                      <p class="mb-0">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero.</p>
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none mb-4"><span class="number">04</span></span>
+                      <h4 class="mb-1">Finalize</h4>
+                      <p class="mb-0">Integer posuere erat, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <!--/column -->
+                  </div>
+                  <!--/.row -->
+                </div>
+                <!-- /.container -->
+              </section>
+              <!-- /section -->
+
+              <section class="wrapper bg-light">
+                <div class="container py-14 py-md-16">
+                  <div class="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0">
+                    <div class="col-lg-4 mt-lg-2">
+                      <h2 class="fs-15 text-uppercase text-muted mb-3">Our Clients</h2>
+                      <h3 class="display-4 mb-3 pe-xxl-5">Trusted by over 300+ clients</h3>
+                      <p class="lead fs-lg mb-0 pe-xxl-5">We bring solutions to make life easier for our customers.</p>
+                    </div>
+                    <!-- /column -->
+                    <div class="col-lg-8">
+                      <div class="row row-cols-2 row-cols-md-4 gx-0 gx-md-8 gx-xl-12 gy-12">
+                        <div class="col">
+                          <figure class="px-3 px-md-0 px-xxl-2"><img src="./assets/img/brands/z1.png" alt="" /></figure>
+                        </div>
+                        <!--/column -->
+                        <div class="col">
+                          <figure class="px-3 px-md-0 px-xxl-2"><img src="./assets/img/brands/z2.png" alt="" /></figure>
+                        </div>
+                        <!--/column -->
+                        <div class="col">
+                          <figure class="px-3 px-md-0 px-xxl-2"><img src="./assets/img/brands/z3.png" alt="" /></figure>
+                        </div>
+                        <!--/column -->
+                        <div class="col">
+                          <figure class="px-3 px-md-0 px-xxl-2"><img src="./assets/img/brands/z4.png" alt="" /></figure>
+                        </div>
+                        <!--/column -->
+                        <div class="col">
+                          <figure class="px-3 px-md-0 px-xxl-2"><img src="./assets/img/brands/z5.png" alt="" /></figure>
+                        </div>
+                        <!--/column -->
+                        <div class="col">
+                          <figure class="px-3 px-md-0 px-xxl-2"><img src="./assets/img/brands/z6.png" alt="" /></figure>
+                        </div>
+                        <!--/column -->
+                        <div class="col">
+                          <figure class="px-3 px-md-0 px-xxl-2"><img src="./assets/img/brands/z7.png" alt="" /></figure>
+                        </div>
+                        <!--/column -->
+                        <div class="col">
+                          <figure class="px-3 px-md-0 px-xxl-2"><img src="./assets/img/brands/z8.png" alt="" /></figure>
+                        </div>
+                        <!--/column -->
+                      </div>
+                      <!--/.row -->
+                    </div>
+                    <!-- /column -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row mb-8 text-center mt-20">
+                    <div class="col-md-11 col-lg-10 col-xl-8 col-xxl-7 mx-auto">
+                      <h2 class="display-2 mt-3 mb-3 mb-0 px-lg-10 px-xl-0">Save your time and money by choosing Sandbox for your website.</h2>
+                    </div>
+                    <!-- /column -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row mb-12 mb-md-14">
+                    <div class="col-lg-10 col-xl-8 col-xxl-7 mx-auto">
+                      <div class="row align-items-center counter-wrapper gy-6 text-center">
+                        <div class="col-md-4">
+                          <h3 class="counter fs-50 text-primary mb-1">250+</h3>
+                          <p class="fs-18 mb-0">UI elements</p>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-4">
+                          <h3 class="counter fs-50 text-primary mb-1">150+</h3>
+                          <p class="fs-18 mb-0">Pre-made blocks</p>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-4">
+                          <h3 class="counter fs-50 text-primary mb-1">100+</h3>
+                          <p class="fs-18 mb-0">Neatly coded pages</p>
+                        </div>
+                        <!--/column -->
+                      </div>
+                      <!--/.row -->
+                    </div>
+                    <!-- /column -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row gx-lg-0 gy-10 align-items-center mb-16 mb-md-18">
+                    <div class="col-lg-7 position-relative">
+                      <div class="position-absolute" style="top: 50%; left: 50%; width: 140%; height: auto; transform: translate(-50%,-50%); z-index:0"><img class="w-100" src="./assets/img/photos/blurry.png" alt=""></div>
+                      <figure class="position-relative" style="z-index: 2;"><img src="./assets/img/photos/mi1.png" srcset="./assets/img/photos/mi1@2x.png 2x" alt="" /></figure>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-4 ms-auto">
+                      <div class="d-flex flex-row mb-6">
+                        <div>
+                          <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/puzzle.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
+                        </div>
+                        <div>
+                          <h4 class="mb-1">Color and Font Options</h4>
+                          <p class="mb-0">Easily customize colors and fonts, or choose from provided options.</p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row mb-6">
+                        <div>
+                          <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/pen-tool.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
+                        </div>
+                        <div>
+                          <h4 class="mb-1">Cool Features & Elements</h4>
+                          <p class="mb-0">Equipped with stunning features and elements for designing appealing pages.</p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row">
+                        <div>
+                          <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/share.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
+                        </div>
+                        <div>
+                          <h4 class="mb-1">Modern Portfolio Layouts</h4>
+                          <p class="mb-0">Effortlessly create and maintain a visually stunning and impactful portfolio.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/column -->
+                  </div>
+                  <!--/.row -->
+                  <div class="row gx-lg-0 gy-10 align-items-center">
+                    <div class="col-lg-7 position-relative order-lg-2">
+                      <div class="position-absolute" style="top: 50%; left: 50%; width: 140%; height: auto; transform: translate(-50%,-50%); z-index:0"><img class="w-100" src="./assets/img/photos/blurry.png" alt=""></div>
+                      <figure class="position-relative" style="z-index: 2;"><img src="./assets/img/photos/mi2.png" srcset="./assets/img/photos/mi2@2x.png 2x" alt="" /></figure>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-4 me-auto">
+                      <div class="d-flex flex-row mb-6">
+                        <div>
+                          <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/devices.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
+                        </div>
+                        <div>
+                          <h4 class="mb-1">Well-Written Code</h4>
+                          <p class="mb-0">Pixel-perfect and easily editable code with comprehensive comments.</p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row mb-6">
+                        <div>
+                          <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/safe.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
+                        </div>
+                        <div>
+                          <h4 class="mb-1">Gorgeous Shop Layouts</h4>
+                          <p class="mb-0">Present your products to your visitors in an efficient and visually appealing manner.</p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row">
+                        <div>
+                          <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/globe-2.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
+                        </div>
+                        <div>
+                          <h4 class="mb-1">Fully Responsive Layouts</h4>
+                          <p class="mb-0">Adjusts to varying screen sizes, ensuring seamless compatibility across all devices.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/column -->
+                  </div>
+                  <!--/.row -->
+                </div>
+                <!-- /.container -->
+              </section>
+              <!-- /section -->
+
 
             <footer class="bg-gray">
                 <div class="container py-13 py-md-15">
